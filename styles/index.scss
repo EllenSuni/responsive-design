@@ -1,4 +1,35 @@
-@use 'site-styles';
+@import 'site-styles';
 
 
+header {
+    max-width: 870px;
+    width: 100%;
+    min-height: 160px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red
+}
+
+.logo {
+    @include logo-desktop;
+}
+
+.nav {
+    max-width: 267px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 28px;
+    }
+
+    &__link {
+        @include nav-link;
+    }
+}
 
