@@ -116,4 +116,46 @@ header {
             @include text-mobile
         }
     }
+
+    .menu {
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+    
+        &:hover {
+            #dots {
+                display: none;
+            }
+            .drop-down {
+                width: 258px;
+                position: relative;
+                right: 62px;
+                padding: 10px 0;
+                display: flex;
+                justify-content: space-between;
+                gap: 5px;
+                
+            }
+            transition: max-height .5 ease-out;
+        }
+    
+        &__link {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-decoration: none;
+            color: $color;
+            border: 1px solid #babccb;
+            padding: 10px;
+        }
+    }
 } 
+
+.drop-down {
+    display: none;
+}
+
+
+
+
