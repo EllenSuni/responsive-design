@@ -1,0 +1,84 @@
+$color: #242635;
+
+// Logos
+
+@mixin logo-desktop {
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: $color;
+}
+
+@mixin logo-smaller-screens {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: $color;
+}
+
+
+// Navigation
+
+@mixin nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: $color;
+}
+
+
+// Headings
+
+@mixin h1-desktop {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: -2px;
+    color: $color;
+}
+
+@mixin h1-tablet {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 83px;
+    letter-spacing: -1.6px;
+    color: $color;
+}
+
+@mixin h1-mobile {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140px;
+    letter-spacing: -0.8px;
+    color: $color;
+}
+
+
+// Text
+
+@mixin text-desktop-tablet {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: $color;
+}
+
+@mixin text-mobile {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: $color;
+}
