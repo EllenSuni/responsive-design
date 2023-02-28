@@ -1,16 +1,17 @@
 @import 'site-styles';
 
-
-header {
+body {
     max-width: 870px;
     width: 100%;
-    min-height: 160px;
     margin-inline: auto;
+}
+
+header {
+    min-height: 160px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red
 }
 
 .logo {
@@ -30,6 +31,26 @@ header {
 
     &__link {
         @include nav-link;
+    }
+}
+
+.main {
+    margin: 77px auto 47px;
+    max-width: 574px;
+    width: 100%;
+    min-height: 198px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__heading {
+        @include h1-desktop;
+    }
+
+    &__text {
+        @include text-desktop-tablet;
     }
 }
 
